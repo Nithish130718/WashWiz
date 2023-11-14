@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+} 
+
+nav {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 0px 50px;
+}
+
+.logo {
+    font-size: 3em;
+    color: black;
+    padding: 10px 20px;
+    margin: 0px 35px;
+    font-weight: bold;
+}
+
+.menu a {
+    font-size: 2em;
+    color: black;
+    padding: 10px 20px;
+    margin: 0px 20px;
+    text-decoration: none;
+    font-weight: 100px;
+}
+
+/*.menu a:nth-last-child(-n+2) {
+    background-color: aqua;
+    color: black;
+    border-radius: 4px;
+}*/
+
+.menu a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.menu a:nth-last-child(-n+2):hover{
+    background-color: darkslateblue;
+    color: white
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.left{
+    flex-basis: 40%;
+    animation: bounce;
+    animation-duration: 1s;
+}
+
+.left h1{
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+.left h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+}
+
+.left a button {
+    cursor: pointer;
+    background: #343a40;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 5px;
+    width: 225px;
+    font-size: 1.65em;
+    margin-right: 20px;
+}
+
+.left a button:hover{
+    background: floralwhite;
+    border: 3px solid black;
+    color: black;
+    font-weight: bold;
+}
+
+/*.left a .policy{
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    width: 225px;
+    font-size: 1.65em;
+    margin-right: 20px;
+}*/
+
+.s-icon{
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    padding:20px;
+}
+
+.s-icon img{
+    width: 80px;
+    margin: 10px;
+}
+
