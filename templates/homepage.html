@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/homepage.css') }}"
+    />
+  </head>
+  <body>
+    <section
+      style="background-image: url('{{ url_for('static', filename='images/homepagebg.png') }}')"
+    >
+      <nav>
+        <div class="logo">
+          <p>WashWiz</p>
+        </div>
+        <div class="menu">
+          <a href="#"> Home </a>
+          <a href="#"> About Us </a>
+          <a href="#"> Services </a>
+          <a href="#"> FAQ </a>
+          <a href="#"> Login </a>
+          <a href="#"> Register </a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="left">
+          <h1>LAUNDRY SERVICES</h1>
+          <br />
+          <h2>
+            At WashWiz, we've streamlined the laundry experience for both our
+            customers and our team. Our system ensures efficiency and
+            transparency in every step of the process.
+          </h2>
+          <a href="#">
+            <button class="read_more">Read more...</button>
+          </a>
+          <a href="#">
+            <button class="policy">Policy</button>
+          </a>
+        </div>
+      </div>
+      <div class="s-icon">
+        <a href="https://facebook.com"
+          ><img
+            src="{{ url_for('static', filename='images/facebook_logo.png') }}"
+            alt="Facebook Logo"
+        /></a>
+        <a href="https://instagram.com"
+          ><img
+            src="{{ url_for('static', filename='images/instagram_logo.png') }}"
+            alt="Instagram Logo"
+        /></a>
+        <a href="https://whatsapp.com"
+          ><img
+            src="{{ url_for('static', filename='images/whatsapp_logo.png') }}"
+            alt="WhatsApp Logo"
+        /></a>
+        <a href="https://twitter.com"
+          ><img
+            src="{{ url_for('static', filename='images/twitter_x_logo.png') }}"
+            alt="Twitter X Logo"
+        /></a>
+      </div>
+    </section>
+  </body>
+</html>
