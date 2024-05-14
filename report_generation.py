@@ -1,5 +1,8 @@
-import datetime
+"""
+    An attempt to create a report generation feature for admins. Not integrated with the other part of the backend.
+"""
 
+import datetime
 
 class LaundryService:
     def __init__(self):
