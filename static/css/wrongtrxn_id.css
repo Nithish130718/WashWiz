@@ -1,0 +1,27 @@
+body {
+  background-color: #f1f1f1;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.vertical-center h1 {
+  font-size: 20rem;
+}
+
+.vertical-center h2 {
+  font-size: 6rem;
+  width: 100%;
+}
+
+.vertical-center p {
+  font-size: 4rem;
+}
+
+.vertical-center a {
+  font-size: 1.5rem;
+}
