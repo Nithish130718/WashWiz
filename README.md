@@ -1,4 +1,4 @@
-# WashWiz,a Laundry Management System
+# WashWiz, a Laundry Management System
 
 This is a Flask-based web application for managing laundry services. It allows users to perform various tasks such as adding branches, service points, tracking orders, and managing transactions.
 
