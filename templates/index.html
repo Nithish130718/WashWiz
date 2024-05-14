@@ -1,1 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WashWiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../static/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../static/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../static/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body
+    onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+  >
+    <!--navbar-->
+    <nav class="navbar glass" style="height: 70px">
+      <span
+        ><a href="#home" style="display: flex; align-items: center"
+          ><img
+            class="img2"
+            src="../static/images/mountain.png"
+            width="40"
+            style="margin: -25px -10px -25px -20px"
+          />
+          <h1 class="logo">&nbsp;WashWiz</h1></a
+        ></span
+      >
+      <ul class="nav-links">
+        <li>
+          <a href="/" id="pri" class="active cir_border">Home</a>
+        </li>
+        <li>
+          <a href="#features" id="sec" class="cir_border">Key Features</a>
+        </li>
+        <li>
+          <a href="#explore" id="tri" class="cir_border">Explore</a>
+        </li>
+        <li>
+          <a href="#track" id = "tri1" class = "cir_border"> Track Order</a>
+        </li>
+        <li>
+          <a href="#types" id="quad" class="cir_border">Types of Washing</a>
+        </li>
+        <li><a href="#about" id="quint" class="cir_border">About</a></li>
+        <li>
+          <a href="#contribution" id="hex" class="cir_border">Contributions</a>
+        </li>
+        <li>
+          <a href="#contact" id="hept" class="cir_border">Contact</a>
+        </li>
+        <li>
+          <a href = "/login" id = "oct" class = "cir_border"> Admin</a>
+          </li>
+      </ul>
+      <img src="../static/images/menu-btn.png" alt="" class="menu-btn" />
+    </nav>
+    <!--navbar-->
 
+    <header id="home">
+      <div class="header-content">
+        <h2 id="quote">Explore the World of Laundry</h2>
+        <div class="line"></div>
+        <h1>LAUNDRY SERVICES</h1>
+        <a
+          href="#about"
+          class="ctn"
+          onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+          >Learn more</a
+        >
+      </div>
+    </header>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="title">
+          <h1 class="dark">Key Features</h1>
+          <div class="line"></div>
+        </div>
+        <div class="row">
+          <article class="card col">
+            <img class="card-img" src="../static/images/login_bg.png" />
+            <h4 class="dark">Exclusive services</h4>
+            <p class="font-color">
+              At WashWiz, we've streamlined the laundry experience for both our
+              customers and our team. Our system ensures efficiency and
+              transparency in every step of the process.
+            </p>
+            <a href="#" class="ctn">All Details</a>
+          </article>
+          <article class="card col">
+            <img src="../static/images/login_bg.png" />
+            <h4 class="dark">Faster Delivery</h4>
+            <p class="font-color">
+              Join a network of services, where you can get your clothes
+              processed comparatively. Our delivery time is rated one of the
+              best in the industry.
+            </p>
+            <a href="#" class="ctn">All Details</a>
+          </article>
+          <article class="card col">
+            <img src="../static/images/login_bg.png" />
+            <h4 class="dark">City Wide Services</h4>
+            <p class="font-color">
+              Diving into the industry sounds fantastic. Even more fantastic is
+              lasting in it, with over 100+ service points and branches that
+              helps us satisfy our customers.
+            </p>
+            <a href="#" class="ctn">All Details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--features-->
+
+    <!--Explore-->
+    <section class="explore" id="explore">
+      <div class="explore-content">
+        <h1>EXPLORE OUR NETWORK</h1>
+        <div class="line"></div>
+        <p>
+          "My second favorite household chore is ironing. My first being hitting
+          my head on the top bunk bed until I faint." - Erma Bombeck
+          <br />Exploring will make you know our network and make use of it :)
+        </p>
+        <a href="#" class="ctn">Explore more</a>
+      </div>
+    </section>
+
+    <section class="track" id="track">
+      <div class="track-content">
+        <h1>TRACK YOUR ORDER</h1>
+        <div class="line"></div>
+        <p>
+          Worried about what stage your laundry is in? We got you covered. Track your 
+          order's status in live time using our Tracker System
+        </p>
+        <a href="/track" class="ctn">Track Order</a>
+      </div>
+    </section>
+    <!--Explore-->
+
+    <!--types-->
+    <section class="types" id="types">
+      <div class="container row">
+        <div class="col content-col">
+          <h1 class="font-color">TYPES OF WASHING METHODS WE DO</h1>
+          <div class="line"></div>
+          <p>
+            Washing is okay. But using the right technique appropriately makes
+            it better.
+            <br />
+            Got stains on your whites? We got 'Spot Washing'<br />
+            Ouch, delicate clothes? You got 'Cold Water Washing'
+            <br />
+            and many more ......
+          </p>
+          <a href="#" class="ctn">Learn more</a>
+        </div>
+        <div class="image-col">
+          <div class="image-gallery">
+            <img src="../static/images/img3.png" alt="" />
+            <img src="../static/images/img4.png" alt="" />
+            <img src="../static/images/img5.png" alt="" />
+            <img src="../static/images/img6.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+    </section>
+    <!--types-->
+
+    <!-- About -->
+    <section id="about">
+      <div class="title">
+        <h1 class="font-color">About Us</h1>
+        <div class="line"></div>
+      </div>
+      <br />
+      <div id="about_us">
+        <div class="boxx">
+          <div class="containerx">
+            <input type="radio" name="slider" id="item-1" checked />
+            <input type="radio" name="slider" id="item-2" />
+            <input type="radio" name="slider" id="item-3" />
+            <div class="cards">
+              <label class="cardt" for="item-1" id="col-img-1">
+                <img src="../static/images/carousel-img4.jpg" />
+              </label>
+              <label class="cardt" for="item-2" id="col-img-2">
+                <img src="../static/images/carousel-img5.jpg" />
+              </label>
+              <label class="cardt" for="item-3" id="col-img-3">
+                <img src="../static/images/carousel-img6.jpg" />
+              </label>
+            </div>
+          </div>
+          <span id="about-quad"
+            ><a href="#home"
+              ><center>
+                <h1 style="font-family: var(--ff-montserrat); color: white">
+                  Find that
+                </h1>
+                <br />
+                <img
+                  class="img2"
+                  src="../static/images/mountain_dark.jpg"
+                  width="200"
+                  style="border-radius: 12%"
+                />
+                <br />
+                <h1 class="logo" style="font-size: 50px">ADVENTURE</h1>
+              </center>
+            </a>
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+
+    <!-- Contributions -->
+    <div class="title">
+      <h1 class="font-color">Contributors</h1>
+      <div class="line"></div>
+    </div>
+    <section class="contributors" id="contribution">
+      <div class="concard">
+        <img
+          src="https://github.com/Navyapriyalal.png"
+          alt="profile-picture"
+          class="pfp"
+        />
+        <div class="text">
+          <h1>Navya S G M</h1>
+          <p>A distinguished programmer with years of experience</p>
+        </div>
+        <div class="logolink">
+          <a href="https://github.com/Navyapriyalal" target="_blank">
+            <img
+              src="../static/images/GitHub120px.png"
+              alt="Github-Logo"
+              class="github-logo"
+          /></a>
+        </div>
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://github.com/nithin3101.png"
+          alt="profile-picture"
+          class="pfp"
+        />
+        <div class="text">
+          <h1>Nithin Raj</h1>
+          <p>A distinguished programmer with years of experience</p>
+        </div>
+        <div class="logolink">
+          <a href="https://github.com/nithin3101" target="_blank"
+            ><img
+              src="../static/images/GitHub120px.png"
+              alt="Github-Logo"
+              class="github-logo"
+          /></a>
+        </div>
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://github.com/Nithish130718.png"
+          alt="profile-picture"
+          class="pfp"
+        />
+        <div class="text">
+          <h1>Nithish Kumar S</h1>
+          <p>A distinguished programmer with years of experience</p>
+        </div>
+        <div class="logolink">
+          <a href="https://github.com/Nithish130718" target="_blank"
+            ><img
+              src="../static/images/GitHub120px.png"
+              alt="Github-Logo"
+              class="github-logo"
+          /></a>
+        </div>
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://github.com/Nithya652005.png"
+          alt="profile-picture"
+          class="pfp"
+        />
+        <div class="text">
+          <h1>Nithya B</h1>
+          <p>A distinguished programmer with years of experience</p>
+        </div>
+        <div class="logolink">
+          <a href="https://github.com/Nithya652005" target="_blank"
+            ><img
+              src="../static/images/GitHub120px.png"
+              alt="Github-Logo"
+              class="github-logo"
+          /></a>
+        </div>
+      </div>
+      <div class="concard">
+        <img
+          src="https://github.com/jayaraman2212066.png"
+          alt="profile-picture"
+          class="pfp"
+        />
+        <div class="text">
+          <h1>Jayaraman K</h1>
+          <p>A distinguished programmer with years of experience</p>
+        </div>
+        <div class="logolink">
+          <a href="https://github.com/jayaraman2212066" target="_blank"
+            ><img
+              src="../static/images/GitHub120px.png"
+              alt="Github-Logo"
+              class="github-logo"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- Contributions -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="title">
+        <h1 class="font-color">Contact Us</h1>
+        <div class="line"></div>
+      </div>
+      <div class="contact_us">
+        <form class="cform" action="" method="post">
+          <div class="crow-message">
+            <h1 class="color">Send us a message</h1>
+            <div></div>
+          </div>
+          <div class="crow-in">
+            <input type="text" id="name" name="name" placeholder="Your name" />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your Email id"
+            />
+          </div>
+          <div class="crow">
+            <div class="ccol-left">
+              <select name="country" id="country">
+                <option value="India">Chennai</option>
+                <option value="Russia">Coimbatore</option>
+                <option value="usa">Madurai</option>
+                <option value="Japan">Trichy</option>
+                <option value="France">Kanyakumari</option>
+                <option value="Brazil">Kelambakkam</option>
+              </select>
+            </div>
+          </div>
+          <div class="crow">
+            <div class="ccol-left">
+              <textarea
+                type="text"
+                id="remarks"
+                name="remarks"
+                placeholder="Your Remarks....."
+                style="height: 150px"
+              ></textarea>
+            </div>
+          </div>
+          <input class="crow-s" type="submit" value="Submit" />
+        </form>
+        <div class="cbox">
+          <div>
+            <p class="cbox-message">
+              Prefer some other way ?<br />Reach us by using the details given
+              below
+            </p>
+            <div class="cbox-line"></div>
+          </div>
+          <div class="c_boxx">
+            <a href="mailto:abc@gmail.com"
+              ><i class="fa fa-envelope"></i>
+              Mail: admin@gmail.com
+            </a>
+          </div>
+          <div class="c_boxx">
+            <a href="tel:+91-12345-67890"
+              ><i class="fa fa-phone"></i>
+              Phone: (+91) 12345-67890
+            </a>
+          </div>
+          <div class="c_boxx">
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1-v17dWI3NCgPnMYe_2UQ7dYxI48&ll=12.752434544177806%2C80.193007&z=15"
+              ><i class="fa fa-map-marker"></i>
+              Location: Chennai,TamilNadu,India
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact  -->
+    <!-- up scroll -->
+    <i class="arrow" onclick="topFunction()" id="upbtn"></i>
+    <!-- end -->
+    <!--footer-->
+    <section class="footer">
+      <span
+        >Created By Team BrainOverFlow | &#169; 2022 All rights reserved.</span
+      >
+      <div class="social">
+        
+          <a
+            href="https://github.com/Nithish130718/WashWiz"
+            target="_blank"
+            rel="noreferrer"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+            ><i class="fa fa-linkedin-square"></i
+          ></a>
+        </li>
+      </div>
+    </section>
+    <!--footer-->
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

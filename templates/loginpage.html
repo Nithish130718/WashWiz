@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login & Registration Form | Codehal</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/loginpage.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sign-in">
+        <form action="/logindash" method = 'post'>
+          <h2>Login</h2>
+          <div class="input-group">
+            <input type="text" required id = "username" name =  "username"/>
+            <label for="username">Username</label>
+          </div>
+          <div class="input-group">
+            <input type="password" required id = "password" name = "password"/>
+            <label for="password">Password</label>
+          </div>
+          <div class="remember">
+            <label><input type="checkbox" /> Remember me</label>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    <script src="loginscript.js"></script>
+  </body>
+</html>
