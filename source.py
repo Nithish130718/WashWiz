@@ -1,3 +1,8 @@
+
+"""
+    A file with all backend code - no integration, pure backend 
+"""
+
 import hashlib, json, re, datetime
 from abc import abstractmethod
 from geopy.geocoders import Nominatim
